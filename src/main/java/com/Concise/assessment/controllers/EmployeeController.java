@@ -76,6 +76,12 @@ public class EmployeeController
 		e.deleteById(id);
 		return "Employee with id"+id+" Deleted Successfully";
 	}
+	@DeleteMapping("/delete")
+	public String DeleteEmployees()
+	{
+		e.deleteAll();
+		return "Deleted all tuples in empployees table";
+	}
 }
 
 
